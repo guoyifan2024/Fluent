@@ -1,0 +1,131 @@
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:54:23 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "PS2019FGRGYSDY" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname        Core  O.S.         PID    Vendor                         
+-------------------------------------------------------------------------------
+n8    PS2019FGRGYSDY  9/8  Windows-x64  9380   Intel(R) Core(TM) i7-9700      
+n7    PS2019FGRGYSDY  8/8  Windows-x64  7664   Intel(R) Core(TM) i7-9700      
+n6    PS2019FGRGYSDY  7/8  Windows-x64  8420   Intel(R) Core(TM) i7-9700      
+n5    PS2019FGRGYSDY  6/8  Windows-x64  6788   Intel(R) Core(TM) i7-9700      
+n4    PS2019FGRGYSDY  5/8  Windows-x64  776    Intel(R) Core(TM) i7-9700      
+n3    PS2019FGRGYSDY  4/8  Windows-x64  10928  Intel(R) Core(TM) i7-9700      
+n2    PS2019FGRGYSDY  3/8  Windows-x64  9604   Intel(R) Core(TM) i7-9700      
+n1    PS2019FGRGYSDY  2/8  Windows-x64  4140   Intel(R) Core(TM) i7-9700      
+n0*   PS2019FGRGYSDY  1/8  Windows-x64  9276   Intel(R) Core(TM) i7-9700      
+host  PS2019FGRGYSDY       Windows-x64  7680   Intel(R) Core(TM) i7-9700      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is D:\\icem\\chongxin\\zuixin\\cleanup-fluent-PS2019FGRGYSDY-7680.bat
+
+Reading journal file D:\icem\chongxin\zuixin\_read_fluent_case_.jou...
+
+> ;Journal file automatically created by Fluent!
+/file read-case D:/icem/chongxin/zuixin/fluent.msh
+
+Reading "D:/icem/chongxin/zuixin/fluent.msh"...
+
+Buffering for file scan...
+
+   20694 nodes.
+     785 triangular cells, zone 17.
+     742 triangular cells, zone 18.
+   31012 triangular cells, zone 19.
+    2644 triangular cells, zone 20.
+     492 triangular cells, zone 21.
+     600 triangular cells, zone 22.
+    1146 2D interior faces, zone 23.
+    1082 2D interior faces, zone 24.
+   42708 2D interior faces, zone 25.
+    3913 2D interior faces, zone 26.
+     705 2D interior faces, zone 27.
+     862 2D interior faces, zone 28.
+      59 2D wall faces, zone 29.
+      59 2D wall faces, zone 30.
+     103 2D wall faces, zone 31.
+      46 2D wall faces, zone 32.
+      50 2D wall faces, zone 33.
+    3589 2D wall faces, zone 34.
+    3979 2D wall faces, zone 35.
+      54 2D interior faces, zone 36.
+
+Building...
+     mesh
+	auto partitioning mesh by Metis (fast),
+	distributing mesh
+		parts.........,
+      wall -> wall (34) and wall:002 (2)
+      wall -> wall (34) and wall:003 (3)
+      tri -> tri (35) and tri:004 (4)
+      int_interior -> int_interior (36) and int_interior:005 (5)
+      int_interior -> int_interior (36) and int_interior:006 (6)
+      int_interior -> int_interior (36) and int_interior:007 (7)
+      int_interior -> int_interior (36) and int_interior:008 (8)
+      int_interior -> int_interior (36) and int_interior:009 (9)
+		faces.........,
+Note: Separating wall zone 34 into zones 34 and 2. 
+Note: Separating wall zone 34 into zones 34 and 3. 
+Note: Separating wall zone 35 into zones 35 and 4. 
+Note: Separating interior zone 36 into zones 36 and 5. 
+Note: Separating interior zone 36 into zones 36 and 6. 
+Note: Separating interior zone 36 into zones 36 and 7. 
+Note: Separating interior zone 36 into zones 36 and 8. 
+Note: Separating interior zone 36 into zones 36 and 9. 
+		nodes.........,
+		cells.........,
+        bandwidth reduction using Reverse Cuthill-McKee: 3885/49 = 79.2857
+       Clearing partially read grid.
+
+Error at host: Build Grid: Aborted due to critical error.
+
+==============================================================================
+
+Node 6: Process 8420: Received signal SIGSEGV.
+
+==============================================================================
+
+==============================================================================
+
+Node 7: Process 7664: Received signal SIGSEGV.
+
+=============================================================
+===============================
+================================================================
+
+Node 2: Process 9604: Received signal SIGSEGV.
+
+==============================================================================
+
+==============================================================================
+
+Node 5: Process 6788: Received signal SIGSEGV.
+
+==============================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 9276 RUNNING AT PS2019FGRGYSDY
+=   EXIT STATUS: -1 (ffffffff)
+===================================================================================
+ The fl process could not be started.
+
+> 
+
+Warning: An error or interrupt occurred while reading the journal file.
+Some commands may not have been completed.
+
+
+> (cx-gui-do cx-activate-item "Information*Cancel")
+/exit y

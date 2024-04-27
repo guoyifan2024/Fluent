@@ -1,0 +1,33 @@
+# family_boco file written by ICEM CFD by Admin on Mon Aug 29 21:11:47 中国标准时间 2022
+## solver Ansys Fluent
+"GEOM"
+"GEOM" "color" 16663900
+"BLOODIN"
+"BLOODIN" "color" 16663900
+"BUFFERIN"
+"BUFFERIN" "color" 16663900
+"OUTONE"
+"OUTONE" "color" 16663900
+"OUTUP"
+"OUTUP" "color" 16663900
+"OUTDOWN"
+"OUTDOWN" "color" 16663900
+"WALL"
+"WALL" "color" 16663900
+"SURBLOOD"
+"SURBLOOD" "color" 16663900
+"SURBUFFER"
+"SURBUFFER" "color" 16663900
+"SURFLU"
+"SURFLU" "color" 16663900
+"SUROUTONE"
+"SUROUTONE" "color" 16663900
+"SUROUTUP"
+"SUROUTUP" "color" 16663900
+"SUROUTDOWN"
+"SUROUTDOWN" "color" 16663900
+"TRI"
+"TRI" "color" 16663900
+"INTERIOR"
+"INTERIOR" "color" 16663900
+

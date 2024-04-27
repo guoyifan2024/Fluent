@@ -1,0 +1,944 @@
+
+              Welcome to ANSYS Fluent 2021 R2
+
+              Copyright 1987-2021 ANSYS, Inc. All Rights Reserved.
+              Unauthorized use, distribution or duplication is prohibited.
+              This product is subject to U.S. laws governing export and re-export.
+              For full Legal Notice, see documentation.
+
+Build Time: May 28 2021 13:54:23 EDT  Build Id: 10201  
+ 
+Host spawning Node 0 on machine "PS2019FGRGYSDY" (win64).
+
+-------------------------------------------------------------------------------
+ID    Hostname        Core  O.S.         PID    Vendor                         
+-------------------------------------------------------------------------------
+n8    PS2019FGRGYSDY  9/8  Windows-x64  5420   Intel(R) Core(TM) i7-9700      
+n7    PS2019FGRGYSDY  8/8  Windows-x64  11152  Intel(R) Core(TM) i7-9700      
+n6    PS2019FGRGYSDY  7/8  Windows-x64  3216   Intel(R) Core(TM) i7-9700      
+n5    PS2019FGRGYSDY  6/8  Windows-x64  2620   Intel(R) Core(TM) i7-9700      
+n4    PS2019FGRGYSDY  5/8  Windows-x64  14128  Intel(R) Core(TM) i7-9700      
+n3    PS2019FGRGYSDY  4/8  Windows-x64  3040   Intel(R) Core(TM) i7-9700      
+n2    PS2019FGRGYSDY  3/8  Windows-x64  2496   Intel(R) Core(TM) i7-9700      
+n1    PS2019FGRGYSDY  2/8  Windows-x64  14124  Intel(R) Core(TM) i7-9700      
+n0*   PS2019FGRGYSDY  1/8  Windows-x64  1200   Intel(R) Core(TM) i7-9700      
+host  PS2019FGRGYSDY       Windows-x64  6820   Intel(R) Core(TM) i7-9700      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+
+Cleanup script file is D:\\icem\\chongxin\\zuixin\\cleanup-fluent-PS2019FGRGYSDY-6820.bat
+
+Reading journal file D:\icem\chongxin\zuixin\_read_fluent_case_.jou...
+
+> ;Journal file automatically created by Fluent!
+/file read-case D:/icem/chongxin/zuixin/fluent110.01bkk.cas.h5
+Fast-loading "D:\Program Files\ANSYS Inc\v212\fluent\fluent21.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from PS2019FGRGYSDY:"D:/icem/chongxin/zuixin/fluent110.01bkk.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+       36602 cells,     6 cell zones ...
+            785 triangular cells,  zone id: 17
+            743 triangular cells,  zone id: 18
+          31326 triangular cells,  zone id: 19
+           2646 triangular cells,  zone id: 20
+            497 triangular cells,  zone id: 21
+            605 triangular cells,  zone id: 22
+       58951 faces,    21 face zones ...
+              8 2D interior faces,  zone id: 8
+              6 2D interior faces,  zone id: 7
+              3 2D interior faces,  zone id: 6
+             30 2D interior faces,  zone id: 5
+              4 2D interior faces,  zone id: 4
+             18 2D wall faces,  zone id: 3
+             16 2D wall faces,  zone id: 2
+           1146 2D interior faces,  zone id: 23
+           1083 2D interior faces,  zone id: 24
+          43078 2D interior faces,  zone id: 25
+           3915 2D interior faces,  zone id: 26
+            710 2D interior faces,  zone id: 27
+            868 2D interior faces,  zone id: 28
+             59 2D velocity-inlet faces,  zone id: 29
+             59 2D velocity-inlet faces,  zone id: 30
+            105 2D pressure-outlet faces,  zone id: 31
+             49 2D pressure-outlet faces,  zone id: 32
+             53 2D pressure-outlet faces,  zone id: 33
+           3564 2D wall faces,  zone id: 34
+           4173 2D wall faces,  zone id: 35
+              4 2D interior faces,  zone id: 36
+       20959 nodes,     1 node zone  ...
+  Done.
+
+
+Building...
+     mesh
+	distributing mesh
+		parts.........,
+		faces.........,
+		nodes.........,
+		cells.........,
+        bandwidth reduction using Reverse Cuthill-McKee: 3929/49 = 80.1837
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	int_interior:008
+	int_interior:007
+	int_interior:006
+	int_interior:005
+	int_interior:004
+	wall:003
+	wall:002
+	int_interior
+	tri
+	wall
+	int_suroutdown
+	int_suroutup
+	int_suroutone
+	int_surflu
+	int_surbuffer
+	int_surblood
+	bloodin
+	bufferin
+	outdown
+	outone
+	outup
+	suroutdown
+	suroutup
+	suroutone
+	surflu
+	surbuffer
+	surblood
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+
+> /file read-data D:/icem/chongxin/zuixin/fluent110.01bkk.dat.h5
+
+Reading from PS2019FGRGYSDY:"D:/icem/chongxin/zuixin/fluent110.01bkk.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+
+> 
+adjoint/                mesh/                   report/
+define/                 parallel/               server/
+display/                plot/                   solve/
+exit                    preferences/            surface/
+file/                   print-license-usage     views/
+
+> 
+> (cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bufferin (velocity-inlet, id=30)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bufferin (velocity-inlet, id=30)"))
+(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bufferin (velocity-inlet, id=30)"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bloodin (velocity-inlet, id=29)"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bloodin (velocity-inlet, id=29)"))
+(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Setup|Boundary Conditions|Inlet|bloodin (velocity-inlet, id=29)"))
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 1)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 2)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 3)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 4)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 5)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 6)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 7)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 8)
+(cx-gui-do cx-activate-tab-index "Velocity Inlet*Frame2*Frame2" 0)
+(cx-gui-do cx-activate-item "Velocity Inlet*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Initialization"))
+(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame9*PushButton1(Initialize)")
+(cx-gui-do cx-activate-item "Solution Initialization*Table1*Frame9*PushButton1(Initialize)")
+(cx-gui-do cx-activate-item "Question*OK")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Solution|Run Calculation"))
+(cx-gui-do cx-activate-item "Run Calculation*Table1*Table6(Solution Advancement)*Table1*PushButton1(Calculate)")
+
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+
+ Reversed flow on 57 faces (52.0% area) of pressure-outlet 31.
+
+ Reversed flow on 33 faces (63.6% area) of pressure-outlet 32.
+
+ Reversed flow on 41 faces (75.0% area) of pressure-outlet 33.
+     1  1.0000e+00  1.5196e+02  1.5443e+02  0.0000e+00  1.0024e+00  9.4437e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1:07:39   99
+
+ Reversed flow on 30 faces (28.0% area) of pressure-outlet 31.
+     2  1.0000e+00  2.5270e-03  2.6711e-03  0.0000e+00  9.7844e-01  8.0927e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1:03:22   98
+
+ Reversed flow on 23 faces (23.5% area) of pressure-outlet 31.
+     3  1.0000e+00  1.9662e-03  2.0112e-03  0.0000e+00  8.1757e-01  7.0983e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:58:16   97
+
+ Reversed flow on 49 faces (48.2% area) of pressure-outlet 31.
+     4  1.0000e+00  1.7507e-03  1.7167e-03  0.0000e+00  9.9827e-01  8.8941e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:54:27   96
+
+ Reversed flow on 71 faces (68.5% area) of pressure-outlet 31.
+     5  1.0000e+00  1.6868e-03  1.6219e-03  0.0000e+00  1.0122e+00  8.0304e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:51:01   95
+
+ Reversed flow on 78 faces (74.7% area) of pressure-outlet 31.
+     6  1.1965e+00  1.6774e-03  1.5924e-03  1.4796e-16  5.3643e-01  1.3388e+00  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:47:17   94
+
+ Reversed flow on 71 faces (68.5% area) of pressure-outlet 31.
+
+ Reversed flow on 1 face (2.3% area) of pressure-outlet 32.
+     7  1.1789e+00  1.6080e-03  1.5028e-03  1.4550e-16  1.7379e-01  6.0771e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:44:15   93
+
+ Reversed flow on 79 faces (75.7% area) of pressure-outlet 31.
+
+ Reversed flow on 2 faces (3.8% area) of pressure-outlet 32.
+     8  1.1574e+00  1.5127e-03  1.3982e-03  1.4378e-16  6.2942e-02  2.8419e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:41:27   92
+
+ Reversed flow on 77 faces (73.8% area) of pressure-outlet 31.
+
+ Reversed flow on 3 faces (6.8% area) of pressure-outlet 32.
+     9  1.2178e+00  1.3859e-03  1.2724e-03  1.4902e-16  3.9954e-02  2.7311e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:39:29   91
+
+ Reversed flow on 80 faces (76.0% area) of pressure-outlet 31.
+
+ Reversed flow on 4 faces (8.7% area) of pressure-outlet 32.
+    10  1.5674e+00  1.1012e-03  1.0226e-03  1.5049e-16  3.1189e-02  2.6137e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:37:14   90
+
+ Reversed flow on 83 faces (79.4% area) of pressure-outlet 31.
+
+ Reversed flow on 5 faces (10.2% area) of pressure-outlet 32.
+    11  1.5303e+00  8.5561e-04  7.9472e-04  1.5329e-16  1.8485e-02  1.1907e-01  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:35:41   89
+
+ Reversed flow on 85 faces (81.2% area) of pressure-outlet 31.
+
+ Reversed flow on 6 faces (13.3% area) of pressure-outlet 32.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    12  1.2680e+00  6.3829e-04  5.7733e-04  1.5466e-16  1.5808e-02  5.9435e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:34:23   88
+
+ Reversed flow on 86 faces (82.2% area) of pressure-outlet 31.
+
+ Reversed flow on 7 faces (15.5% area) of pressure-outlet 32.
+
+ Reversed flow on 1 face (2.7% area) of pressure-outlet 33.
+    13  1.0466e+00  4.7611e-04  4.2514e-04  1.5614e-16  1.5211e-02  3.8077e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:33:17   87
+
+ Reversed flow on 87 faces (83.1% area) of pressure-outlet 31.
+
+ Reversed flow on 8 faces (18.2% area) of pressure-outlet 32.
+
+ Reversed flow on 1 face (2.7% area) of pressure-outlet 33.
+    14  9.2588e-01  3.8082e-04  3.2942e-04  1.5913e-16  1.4731e-02  3.0388e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:32:21   86
+
+ Reversed flow on 90 faces (85.9% area) of pressure-outlet 31.
+
+ Reversed flow on 8 faces (18.2% area) of pressure-outlet 32.
+
+ Reversed flow on 2 faces (5.0% area) of pressure-outlet 33.
+    15  9.6053e-01  3.2783e-04  2.8085e-04  1.5927e-16  1.3426e-02  2.4295e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:31:31   85
+
+ Reversed flow on 90 faces (85.9% area) of pressure-outlet 31.
+
+ Reversed flow on 8 faces (18.2% area) of pressure-outlet 32.
+
+ Reversed flow on 2 faces (5.0% area) of pressure-outlet 33.
+    16  8.8161e-01  2.6688e-04  2.2839e-04  1.5919e-16  1.2218e-02  2.0778e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:30:48   84
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 9 faces (20.8% area) of pressure-outlet 32.
+
+ Reversed flow on 3 faces (6.5% area) of pressure-outlet 33.
+    17  8.1949e-01  2.1540e-04  1.8123e-04  1.5882e-16  1.1048e-02  1.8644e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:30:10   83
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 9 faces (20.8% area) of pressure-outlet 32.
+
+ Reversed flow on 3 faces (6.5% area) of pressure-outlet 33.
+    18  7.7805e-01  1.6926e-04  1.4179e-04  1.5372e-16  9.9123e-03  1.7719e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:29:18   82
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 10 faces (22.4% area) of pressure-outlet 32.
+
+ Reversed flow on 4 faces (8.0% area) of pressure-outlet 33.
+    19  7.2834e-01  1.3390e-04  1.1100e-04  1.5484e-16  8.8313e-03  1.6629e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:29:06   81
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 10 faces (22.4% area) of pressure-outlet 32.
+
+ Reversed flow on 4 faces (8.0% area) of pressure-outlet 33.
+    20  6.8399e-01  1.1190e-04  9.4780e-05  1.5505e-16  7.8079e-03  1.5779e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:28:35   80
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 11 faces (25.0% area) of pressure-outlet 32.
+
+ Reversed flow on 5 faces (10.3% area) of pressure-outlet 33.
+    21  6.6739e-01  1.0314e-04  8.8812e-05  1.5306e-16  6.8154e-03  1.4176e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:28:07   79
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 12 faces (26.5% area) of pressure-outlet 32.
+
+ Reversed flow on 6 faces (11.8% area) of pressure-outlet 33.
+    22  6.4736e-01  1.0277e-04  8.7741e-05  1.5160e-16  5.8257e-03  1.2610e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:27:40   78
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 12 faces (26.5% area) of pressure-outlet 32.
+
+ Reversed flow on 6 faces (11.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    23  5.9990e-01  1.0501e-04  8.9628e-05  1.5316e-16  4.9397e-03  1.1368e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:27:14   77
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 13 faces (28.8% area) of pressure-outlet 32.
+
+ Reversed flow on 7 faces (13.3% area) of pressure-outlet 33.
+    24  5.5593e-01  1.0822e-04  9.2123e-05  1.5427e-16  4.2517e-03  1.0241e-02  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:26:35   76
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 13 faces (28.8% area) of pressure-outlet 32.
+
+ Reversed flow on 8 faces (15.3% area) of pressure-outlet 33.
+    25  5.1731e-01  1.0889e-04  9.3254e-05  1.5379e-16  3.7619e-03  9.3778e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:26:14   75
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 13 faces (28.8% area) of pressure-outlet 32.
+
+ Reversed flow on 8 faces (15.3% area) of pressure-outlet 33.
+    26  4.8616e-01  1.0886e-04  9.3928e-05  1.5371e-16  3.3914e-03  8.3451e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:25:53   74
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 13 faces (28.8% area) of pressure-outlet 32.
+
+ Reversed flow on 9 faces (17.9% area) of pressure-outlet 33.
+    27  4.4916e-01  1.0626e-04  9.2118e-05  1.5183e-16  3.1060e-03  7.6368e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:25:32   73
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 9 faces (17.9% area) of pressure-outlet 33.
+    28  4.1342e-01  1.0443e-04  9.1081e-05  1.5572e-16  2.8203e-03  6.9132e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:25:11   72
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 9 faces (17.9% area) of pressure-outlet 33.
+    29  3.8245e-01  1.0300e-04  9.0664e-05  1.5109e-16  2.5052e-03  6.2080e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:24:51   71
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 9 faces (17.9% area) of pressure-outlet 33.
+    30  3.5431e-01  1.0173e-04  8.8793e-05  1.5263e-16  2.1838e-03  5.4128e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:24:30   70
+
+ Reversed flow on 91 faces (86.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    31  3.2266e-01  9.7349e-05  8.5204e-05  1.5398e-16  1.9111e-03  4.8623e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:23:55   69
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    32  3.0106e-01  9.2367e-05  8.1062e-05  1.5205e-16  1.6763e-03  4.2725e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:23:37   68
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    33  2.7522e-01  8.5565e-05  7.4952e-05  1.5327e-16  1.4812e-03  3.7607e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:23:18   67
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    34  2.5299e-01  7.7686e-05  6.8001e-05  1.5200e-16  1.3143e-03  3.2659e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:22:59   66
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    35  2.2923e-01  6.8943e-05  6.0420e-05  1.5513e-16  1.1822e-03  2.8779e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:22:40   65
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    36  2.1221e-01  6.0573e-05  5.2841e-05  1.5190e-16  1.0574e-03  2.5507e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:22:20   64
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    37  1.9298e-01  5.1950e-05  4.4815e-05  1.5136e-16  9.4537e-04  2.3206e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:22:00   63
+
+ Reversed flow on 90 faces (85.7% area) of pressure-outlet 31.
+
+ Reversed flow on 14 faces (31.1% area) of pressure-outlet 32.
+
+ Reversed flow on 10 faces (20.6% area) of pressure-outlet 33.
+    38  1.7642e-01  4.3763e-05  3.7111e-05  1.5214e-16  8.4890e-04  2.0746e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:21:39   62
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 15 faces (32.6% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    39  1.6226e-01  3.6381e-05  3.0180e-05  1.5344e-16  7.6229e-04  1.8457e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:21:19   61
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 15 faces (32.6% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    40  1.4937e-01  3.0467e-05  2.4706e-05  1.5077e-16  6.8280e-04  1.6592e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:20:58   60
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 16 faces (34.1% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    41  1.3846e-01  2.6482e-05  2.1397e-05  1.5152e-16  6.0633e-04  1.5131e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:20:38   59
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 16 faces (33.3% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    42  1.2917e-01  2.4219e-05  1.9932e-05  1.5266e-16  5.3238e-04  1.3503e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:20:17   58
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 16 faces (33.3% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    43  1.2018e-01  2.3026e-05  1.9049e-05  1.5167e-16  4.5669e-04  1.1998e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:19:45   57
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 17 faces (35.3% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    44  1.1232e-01  2.2347e-05  1.8259e-05  1.5457e-16  3.9058e-04  1.0562e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:19:26   56
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 17 faces (35.3% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    45  1.0433e-01  2.1506e-05  1.7413e-05  1.5287e-16  3.4660e-04  1.0348e-03  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:19:07   55
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 11 faces (22.9% area) of pressure-outlet 33.
+    46  9.9310e-02  2.1137e-05  1.7230e-05  1.5334e-16  3.0790e-04  8.6506e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:18:48   54
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    47  9.0913e-02  1.9826e-05  1.6066e-05  1.5536e-16  2.8365e-04  8.4639e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:18:28   53
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    48  8.4014e-02  1.8639e-05  1.4969e-05  1.5494e-16  2.6175e-04  7.9721e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:18:08   52
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    49  7.8740e-02  1.7423e-05  1.3905e-05  1.5206e-16  2.3878e-04  7.4014e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:17:58   51
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    50  7.3292e-02  1.6136e-05  1.2807e-05  1.5323e-16  2.1702e-04  6.8493e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:17:56   50
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    51  6.8415e-02  1.4775e-05  1.1668e-05  1.5347e-16  1.9805e-04  6.3662e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:17:49   49
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    52  6.3763e-02  1.3374e-05  1.0489e-05  1.5349e-16  1.8215e-04  5.9022e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:17:19   48
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    53  5.9915e-02  1.1950e-05  9.2659e-06  1.5338e-16  1.6643e-04  5.5121e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:16:51   47
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    54  5.5786e-02  1.0569e-05  8.0637e-06  1.5231e-16  1.5281e-04  5.1103e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:16:25   46
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    55  5.1824e-02  9.2443e-06  6.8976e-06  1.5305e-16  1.4163e-04  4.7144e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:16:00   45
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    56  4.8162e-02  8.0415e-06  5.8242e-06  1.5113e-16  1.3220e-04  4.3623e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:15:45   44
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    57  4.5184e-02  6.9130e-06  4.8380e-06  1.5272e-16  1.2332e-04  4.0198e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:15:28   43
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    58  4.2533e-02  5.9304e-06  3.9824e-06  1.5477e-16  1.1408e-04  3.7098e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:15:01   42
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    59  3.9822e-02  5.1345e-06  3.3457e-06  1.5293e-16  1.0465e-04  3.4378e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:14:28   41
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    60  3.7373e-02  4.5981e-06  2.9676e-06  1.5225e-16  9.5193e-05  3.2092e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:14:13   40
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    61  3.5297e-02  4.3681e-06  2.8358e-06  1.5111e-16  8.6501e-05  3.0328e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:13:49   39
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    62  3.3406e-02  4.2862e-06  2.7487e-06  1.5215e-16  7.9127e-05  2.8920e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:13:26   38
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    63  3.1844e-02  4.1970e-06  2.6716e-06  1.4997e-16  7.4476e-05  2.8107e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:13:03   37
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    64  3.0848e-02  4.1043e-06  2.5912e-06  1.5118e-16  6.7629e-05  2.7815e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:12:41   36
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (39.1% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    65  3.0034e-02  3.9898e-06  2.4914e-06  1.4936e-16  6.5650e-05  2.8513e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:12:19   35
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 18 faces (36.8% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    66  2.9330e-02  3.8834e-06  2.3803e-06  1.5032e-16  6.0881e-05  2.7154e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:11:57   34
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    67  2.9458e-02  3.7644e-06  2.2664e-06  1.5069e-16  5.8175e-05  2.6811e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:11:35   33
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    68  2.9092e-02  3.6455e-06  2.1477e-06  1.5129e-16  5.6134e-05  2.6861e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:11:07   32
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    69  2.9015e-02  3.5342e-06  2.0457e-06  1.5242e-16  5.4603e-05  2.7059e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:10:47   31
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    70  2.9562e-02  3.4335e-06  1.9564e-06  1.5153e-16  5.3102e-05  2.7144e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:10:27   30
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    71  2.9985e-02  3.3231e-06  1.8654e-06  1.5181e-16  5.3294e-05  3.0243e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:10:07   29
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    72  3.1217e-02  3.2218e-06  1.7957e-06  1.5205e-16  6.6243e-05  7.0797e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:09:46   28
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    73  3.1797e-02  3.1214e-06  1.7234e-06  1.5175e-16  5.3114e-05  3.4002e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:09:26   27
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    74  3.2609e-02  3.0386e-06  1.6728e-06  1.5129e-16  4.8978e-05  3.8055e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:09:05   26
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    75  3.4430e-02  2.9840e-06  1.6850e-06  1.5147e-16  5.6744e-05  7.3710e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:08:39   25
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    76  3.5822e-02  2.9734e-06  1.7127e-06  1.5373e-16  4.7133e-05  3.4169e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:08:24   24
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    77  3.6819e-02  2.9680e-06  1.7590e-06  1.5070e-16  4.3665e-05  3.6317e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:07:59   23
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    78  3.8233e-02  2.9641e-06  1.7976e-06  1.5226e-16  4.7324e-05  4.8875e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:07:39   22
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    79  3.9007e-02  2.9511e-06  1.8184e-06  1.5235e-16  4.2044e-05  3.1045e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:07:18   21
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    80  3.9220e-02  2.9082e-06  1.8076e-06  1.5299e-16  4.0225e-05  3.7470e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:06:58   20
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    81  3.9399e-02  2.8496e-06  1.7887e-06  1.5281e-16  4.3869e-05  5.8788e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:06:38   19
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    82  3.8019e-02  2.7677e-06  1.7566e-06  1.5039e-16  3.8161e-05  3.1795e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:06:17   18
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    83  3.6146e-02  2.6673e-06  1.7237e-06  1.5250e-16  3.6160e-05  3.6379e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:05:56   17
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    84  3.4792e-02  2.5564e-06  1.6843e-06  1.5161e-16  3.8752e-05  5.1945e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:05:32   16
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    85  3.2536e-02  2.4249e-06  1.6263e-06  1.5107e-16  3.3262e-05  2.9635e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:05:15   15
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    86  3.0076e-02  2.2999e-06  1.5570e-06  1.5409e-16  3.2199e-05  3.5087e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:04:54   14
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    87  2.8157e-02  2.1926e-06  1.4925e-06  1.5200e-16  3.5246e-05  5.3130e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:04:33   13
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    88  2.5753e-02  2.0792e-06  1.4257e-06  1.5033e-16  2.9655e-05  2.8443e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:04:10   12
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+    89  2.3257e-02  1.9615e-06  1.3592e-06  1.5132e-16  2.8892e-05  3.3521e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:03:49   11
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    90  2.1372e-02  1.8574e-06  1.3095e-06  1.5213e-16  3.1835e-05  5.0426e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:03:29   10
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    91  1.9218e-02  1.7540e-06  1.2524e-06  1.5188e-16  2.6513e-05  2.6830e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:03:08    9
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    92  1.7145e-02  1.6575e-06  1.1972e-06  1.5270e-16  2.5940e-05  3.2131e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:02:47    8
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    93  1.5918e-02  1.5728e-06  1.1543e-06  1.5214e-16  2.9088e-05  4.9568e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:02:25    7
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    94  1.4317e-02  1.4915e-06  1.1046e-06  1.5199e-16  2.3839e-05  2.5558e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:02:05    6
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    95  1.2851e-02  1.4182e-06  1.0592e-06  1.5264e-16  2.3370e-05  3.0735e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:01:44    5
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    96  1.2143e-02  1.3532e-06  1.0249e-06  1.5398e-16  2.6767e-05  4.7978e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:01:23    4
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    97  1.1079e-02  1.2943e-06  9.8781e-07  1.5267e-16  2.1723e-05  2.4258e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:01:03    3
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    98  1.0068e-02  1.2416e-06  9.5370e-07  1.5221e-16  2.3081e-05  3.1039e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:00:42    2
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 20 faces (40.6% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+    99  1.0001e-02  1.2617e-06  9.8828e-07  1.5129e-16  2.5447e-05  4.7732e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:00:21    1
+
+ Reversed flow on 89 faces (84.9% area) of pressure-outlet 31.
+
+ Reversed flow on 19 faces (38.3% area) of pressure-outlet 32.
+
+ Reversed flow on 12 faces (24.8% area) of pressure-outlet 33.
+
+  iter  continuity  x-velocity  y-velocity      energy           k     epsilon         wbc         rbc    platelet      plasma     time/iter
+   100  9.0603e-03  1.1907e-06  9.3035e-07  1.5176e-16  2.1978e-05  2.5257e-04  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  0:00:00    0
+
+Calculation complete.
+(cx-gui-do cx-activate-item "Information*OK")
+(cx-gui-do cx-activate-item "Ribbon*Frame1*Frame6(Results)*Table1*Table3(Graphics)*PushButton5(Particle Tracks)")
+(cx-gui-do cx-activate-item "MenuBar*PopupMenuParticle Tracks*New...")
+(cx-gui-do cx-set-toggle-button2 "Particle Tracks*Table2*Frame1*Frame1*ToggleBox1(Options)*CheckButton3(Draw Mesh)" #t)
+(cx-gui-do cx-activate-item "Particle Tracks*Table2*Frame1*Frame1*ToggleBox1(Options)*CheckButton3(Draw Mesh)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton1(OK)")
+(cx-gui-do cx-activate-item "Mesh Display*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-selections "Particle Tracks*Frame3*Table1*DropDownList2" '( 14))
+(cx-gui-do cx-activate-item "Particle Tracks*Frame3*Table1*DropDownList2")
+(cx-gui-do cx-set-list-selections "Particle Tracks*Frame3*List5(Release from Injections)" '( 1))
+(cx-gui-do cx-activate-item "Particle Tracks*Frame3*List5(Release from Injections)")
+(cx-gui-do cx-set-list-selections "Particle Tracks*Frame3*List5(Release from Injections)" '( 0 1))
+(cx-gui-do cx-activate-item "Particle Tracks*Frame3*List5(Release from Injections)")
+(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton1(OK)")
+
+
+DPM Iteration ....
+number tracked = 1121, escaped = 1121
+(cx-gui-do cx-activate-item "Particle Tracks*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-activate-item "NavigationPane*List_Tree1")
+(cx-gui-do cx-set-list-tree-selections "NavigationPane*List_Tree1" (list "Results|Reports|Fluxes"))
+(cx-gui-do cx-set-list-selections "Flux Reports*List3(Boundaries)" '( 0))
+(cx-gui-do cx-activate-item "Flux Reports*List3(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*List3(Boundaries)" '( 0 1))
+(cx-gui-do cx-activate-item "Flux Reports*List3(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*List3(Boundaries)" '( 0 1 3))
+(cx-gui-do cx-activate-item "Flux Reports*List3(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*List3(Boundaries)" '( 0 1 2 3))
+(cx-gui-do cx-activate-item "Flux Reports*List3(Boundaries)")
+(cx-gui-do cx-set-list-selections "Flux Reports*List3(Boundaries)" '( 0 1 2 3 4))
+(cx-gui-do cx-activate-item "Flux Reports*List3(Boundaries)")
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton1(OK)")
+
+                  Mass Flow Rate               [kg/s]
+-------------------------------- --------------------
+                         bloodin          0.043338345
+                        bufferin          0.043315418
+                         outdown         -0.009490831
+                          outone         -0.064987872
+                           outup         -0.011774113
+                ---------------- --------------------
+                             Net        0.00040094733
+(cx-gui-do cx-activate-item "Flux Reports*PanelButtons*PushButton2(Cancel)")
+(cx-gui-do cx-activate-item "MenuBar*WriteSubMenu*Case & Data...")
+(cx-gui-do cx-set-file-dialog-entries "Select File" '( "fluent110.01bk.cas.h5") "CFF Case/Data Files (*.cas.h5 *.dat.h5 )")
+
+Writing to PS2019FGRGYSDY:"D:/icem/chongxin/zuixin/fluent110.01bk.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+       36602 cells,     6 zones ...
+       58951 faces,    21 zones ...
+       20959 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to PS2019FGRGYSDY:"D:/icem/chongxin/zuixin/fluent110.01bk.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+/exit y

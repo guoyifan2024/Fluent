@@ -1,0 +1,136 @@
+# Written by ICEM CFD 21.2, user Admin, Mon Aug 29 21:11:47 中国标准时间 2022
+
+begin family GEOM
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family GEOM
+
+begin family BLOODIN
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family BLOODIN
+
+begin family BUFFERIN
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family BUFFERIN
+
+begin family OUTONE
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family OUTONE
+
+begin family OUTUP
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family OUTUP
+
+begin family OUTDOWN
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family OUTDOWN
+
+begin family WALL
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family WALL
+
+begin family SURBLOOD
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SURBLOOD
+
+begin family SURBUFFER
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SURBUFFER
+
+begin family SURFLU
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SURFLU
+
+begin family SUROUTONE
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SUROUTONE
+
+begin family SUROUTUP
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SUROUTUP
+
+begin family SUROUTDOWN
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family SUROUTDOWN
+
+begin family TRI
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family TRI
+
+begin family INTERIOR
+    begin solver "Ansys Fluent"
+        begin bctype color
+            active 1
+            color 16663900 1
+        end bctype color
+    end solver "Ansys Fluent"
+end family INTERIOR
